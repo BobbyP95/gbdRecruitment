@@ -1,5 +1,5 @@
-import { Footer } from "../components/footer";
-import { ReadyOption } from "../components/readyOption";
+import { Footer } from "../components/Footer";
+import { ReadyOption } from "../components/ReadyOption";
 
 const sections = [
   {
