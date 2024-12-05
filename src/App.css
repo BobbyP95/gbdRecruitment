@@ -7,6 +7,18 @@
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+nav div{
+  max-width: 1200px;
+}
+
+nav .rightLinks:hover{
+  text-shadow: 0px 0px 2px #022c22;
+}
+
+
+>>>>>>> origin/main
 
 
 .home{
