@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# gbdRecruitment
-Website for recruiting data entry and customer care staff, streamlining the hiring process with efficiency and professionalism
-=======
+
 # GBD company wesite
 Recruitment Company Website
 
@@ -110,4 +107,4 @@ For queries or support, contact: +233 55 737 2483
 
 Email: bobby.bp95@gmail.com
 LinkedIn: https://www.linkedin.com/in/bobby-bruce-appiah-840358218/
->>>>>>> origin/main
+
