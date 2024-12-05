@@ -1,5 +1,6 @@
-import "../App.css";
-import { SocialIcon } from "react-social-icons";
+import '../App.css';
+import { SocialIcon } from 'react-social-icons';
+import './navbar.css';
 type NavbarProps = {
   logo: string;
   companyName: string;
