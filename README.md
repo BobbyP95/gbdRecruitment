@@ -17,72 +17,84 @@ A multipage, responsive website for a recruitment company built using Vite, Reac
 - Dark Mode: Optional dark mode for enhanced user experience.
 
 
+
+
 🚀 Getting Started
-Follow these steps to set up and run the project locally.
+
+You can follow these steps to set up and run the project locally.
 
 Prerequisites
+
 Ensure you have the following installed:
 
-Node.js (v16+)
-npm or yarn
+- Node.js (v16+)
+- npm or yarn
+
+
 Installation
+
 Clone the repository:
 
 bash
-Copy code
-git clone https://github.com/yourusername/recruitment-website.git
-cd recruitment-website
+code
+  - " git clone https://github.com/BobbyP95/gbd "
+  - " cd recruitment-website "
+
+
 Install dependencies:
 
 bash
-Copy code
-npm install
+code
+  - "npm install"
 # or
-yarn install
+  - "yarn install"
+
 Start the development server:
 
 bash
-Copy code
-npm run dev
+code
+  - "npm run dev"
 # or
-yarn dev
+  - "yarn dev"
+
+
 Build the project for production:
 
 bash
-Copy code
-npm run build
+code
+ - "npm run build"
 # or
-yarn build
+ - "yarn build"
+
 Preview the production build:
 
 bash
-Copy code
-npm run preview
+code
+ - "npm run preview"
 # or
-yarn preview
-📸 Screenshots
-Home Page
-A description of the homepage design.
+  - "yarn preview"
 
-
-Job Listings
-A description of the job listings page.
 
 
 🛠️ Tech Stack
-Framework: React
-Build Tool: Vite
-Styling: Tailwind CSS
-Language: TypeScript, JavaScript
-Deployment: Vercel or Netlify
+- Framework: React
+- Build Tool: Vite
+- Styling: Tailwind CSS
+- Language: TypeScript, JavaScript
+- Deployment: Vercel or Netlify
+
+
 🤝 Contributing
+
 Contributions are welcome! Please follow these steps:
 
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-Commit your changes (git commit -m 'Add a feature').
-Push to the branch (git push origin feature/your-feature).
-Open a Pull Request.
+- Fork the repository.
+- Create a new branch (git checkout -b feature/your-feature).
+- Commit your changes (git commit -m 'Add a feature').
+- Push to the branch (git push origin feature/your-feature).
+- Open a Pull Request.
+
+
 🌐 Deployment
 The project can be deployed easily to platforms like Vercel or Netlify. After building the project, upload the contents of the dist folder to your hosting service.
 
