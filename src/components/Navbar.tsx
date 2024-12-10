@@ -1,13 +1,13 @@
-
-import '../App.css';
-import { SocialIcon } from 'react-social-icons';
-import './navbar.css';
+import "../App.css";
+import { SocialIcon } from "react-social-icons";
+import "./navbar.css";
 
 type NavbarProps = {
   logo: string;
   companyName: string;
   links?: { name: string; href: string }[];
   showSearch?: boolean;
+  user?:{userName: string; email: string; imgUrl: string}
 };
 const socialMediaUrls = [
   "https://twitter.com/",
@@ -19,6 +19,7 @@ export function Navbar({
   companyName,
   links = [],
   showSearch = true,
+  user = {userName: "Bobby004", email: "bobby004@gmail.com", imgUrl: "/bobPost.png"}
 }: NavbarProps) {
   return (
     <>
@@ -44,7 +45,7 @@ export function Navbar({
             ))}
           </div>
         </div>
-        <nav className=" bg-gray-300 p-4 ">
+        <nav className=" bg-gray-300 p-4  max-h-24">
           <div className=" container mx-auto flex items-center justify-between">
             {/* Left side: Logo and Company Name */}
             <div className="flex items-center">
@@ -56,13 +57,19 @@ export function Navbar({
                 />
               </a>
 
-              <a href="/" className="resize text-emerald-950 text-auto font-semibold">
+              <a
+                href="/"
+                className="resize text-emerald-950 text-auto font-semibold"
+              >
                 {companyName}
               </a>
             </div>
 
             {/* Right side: Links and optional search box */}
-            <div id="navMenu1" className={`navMenu hidden flex-col text-sm lg:flex-row items-center lg:flex space-x-4  `}>
+            <div
+              id="navMenu1"
+              className={`navMenu hidden flex-col text-sm lg:flex-row items-center lg:flex space-x-4  `}
+            >
               {links.map((link) => (
                 <a
                   key={link.name}
@@ -73,8 +80,16 @@ export function Navbar({
                 </a>
               ))}
             </div>
+            <div className=" cursor-pointer">
+              <div className="flex gap-3 items-center justify-center">
+                <span className="font-semibold text-emerald-900">{user.userName}</span>
+                <img className="w-12 border-2 border-emerald-950 h-fit bg-slate-500 bor rounded-full" src={user.imgUrl} alt="bob" />
+              </div>
+              <div className=" hidden"></div>
+
+            </div>
             <div className="dots text-3xl lg:hidden ">
-                <h1>...</h1>
+              <h1>...</h1>
             </div>
           </div>
         </nav>
