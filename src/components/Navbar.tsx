@@ -56,9 +56,9 @@ export function Navbar({
                 />
               </a>
 
-              <span className="resize text-emerald-950 text-auto font-semibold">
+              <a href="/" className="resize text-emerald-950 text-auto font-semibold">
                 {companyName}
-              </span>
+              </a>
             </div>
 
             {/* Right side: Links and optional search box */}
@@ -67,7 +67,7 @@ export function Navbar({
                 <a
                   key={link.name}
                   href={link.href}
-                  className="rightLinks font-semibold text-emerald-900 hover:text-emerald-950"
+                  className="rightLinks font-semibold text-emerald-900 hover:text-emerald-950 hover:underline"
                 >
                   {link.name}
                 </a>
