@@ -25,7 +25,7 @@ function App() {
         links={links}
         showSearch={true}
       />
-      <Router>
+      {/* <Router> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/consulting" element={<Consulting />} />
@@ -34,7 +34,7 @@ function App() {
           <Route path="/about_us" element={<AboutUs />} />
           <Route path="/contact_us" element={<ContactUs />} />
         </Routes>
-      </Router>
+      {/* </Router> */}
     </>
   );
 }
