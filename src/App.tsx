@@ -25,7 +25,7 @@ function App() {
         links={links}
         showSearch={true}
       />
-      <Home />
+      
       {/* <Router> */}
         <Routes>
           <Route path="/" element={<Home />} />
