@@ -1,5 +1,5 @@
 import "./App.css";
-import {  BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { AboutUs } from "./pages/AboutUs";
 import { Home } from "./pages/Home";
@@ -21,11 +21,10 @@ function App() {
     <>
     <Navbar 
       logo='./gbd.svg'
-      companyName='GBD Company LTD'
+      companyName='GBD LTD'
       links={links}
       showSearch={true}
     />
-    <Router>
     <Routes>
 
     <Route path='/' element={<Home/>}/>
@@ -35,7 +34,7 @@ function App() {
     <Route path='/about_us' element={<AboutUs/>}/>
     <Route path='/contact_us' element={<ContactUs/>}/>
     </Routes>
-    </Router>
+
     </>
   );
 }
