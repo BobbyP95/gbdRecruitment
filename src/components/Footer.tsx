@@ -26,7 +26,7 @@ export function Footer() {
           </div>
         </div>
         <div className="flex flex-col justify-start text-sm">
-          <h1 className="font-bold" >Follow Us</h1>
+          <h1 className="font-bold text-left" >Follow Us</h1>
           <div className=" mt-3 flex flex-col text-left gap-2" >
           <h3>Policies</h3>
           <h3>Terms of Use</h3>
