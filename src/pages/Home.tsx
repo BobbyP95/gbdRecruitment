@@ -31,7 +31,7 @@ const sections = [
 export function Home() {
   return (
     <>
-      <div className="home flex flex-wrap w-full pt-20 ">
+      <div className="home flex flex-wrap w-full pt-28 ">
         {sections.map((values,index) => (
           <div key={index} className="sec-item  w-full h-96 md:w-1/3  md:h-lvh">
             <ReadyOption key={values.id}  {...values} />

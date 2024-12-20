@@ -1,5 +1,5 @@
 import "./App.css";
-import {  BrowserRouter, Routes, Route } from "react-router-dom";
+import {  BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { AboutUs } from "./pages/AboutUs";
 import { Home } from "./pages/Home";
@@ -19,24 +19,23 @@ function App() {
 
   return (
     <>
-      <Navbar
-        logo="./gbd.svg"
-        companyName="GBD LTD"
-        links={links}
-        showSearch={true}
-      />
-       <BrowserRouter>
-      {/* <Router>  */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/consulting" element={<Consulting />} />
-          <Route path="/recruiting" element={<Recruiting />} />
-          <Route path="/get_a_job" element={<GetAJob />} />
-          <Route path="/about_us" element={<AboutUs />} />
-          <Route path="/contact_us" element={<ContactUs />} />
-        </Routes>
-      {/* </Router> */}
-      </BrowserRouter>
+    <Navbar 
+      logo='./gbd.svg'
+      companyName='GBD Company LTD'
+      links={links}
+      showSearch={true}
+    />
+    <Router>
+    <Routes>
+
+    <Route path='/' element={<Home/>}/>
+    <Route path='/consulting' element={<Consulting/>}/>
+    <Route path='/recruiting' element={<Recruiting/>}/>
+    <Route path='/get_a_job' element={<GetAJob/>}/>
+    <Route path='/about_us' element={<AboutUs/>}/>
+    <Route path='/contact_us' element={<ContactUs/>}/>
+    </Routes>
+    </Router>
     </>
   );
 }
