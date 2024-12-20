@@ -14,12 +14,13 @@ const socialMediaUrls = [
   "https://facebook.com/",
   "https://instagram.com/",
 ];
+const BASE_URL = import.meta.env.BASE_URL;
 export function Navbar({
   logo,
   companyName,
   links = [],
   showSearch = true,
-  user = {userName: "Bobby004", email: "bobby004@gmail.com", imgUrl: "/bobPost.png"}
+  user = {userName: "Bobby004", email: "bobby004@gmail.com", imgUrl:`${BASE_URL}bobPost.png`}
 }: NavbarProps) {
   return (
     <>

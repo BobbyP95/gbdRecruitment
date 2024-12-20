@@ -1,9 +1,10 @@
 export function Footer() {
+  const BASE_URL = import.meta.env.BASE_URL;
   return (
     <>
       <div className="  bg-gray-100 p-7 flex flex-wrap justify-around text-xl ">
         <div className="w-2/4 md:w-auto flex flex-col items-center">
-          <img className="w-24 md:w-40" src="/gbd.svg" alt="Logo" />
+          <img className="w-24 md:w-40" src={`${BASE_URL}gbd.svg`} alt="Logo" />
           <h1 className="my-10 text-sm md:text-2xl font-extrabold text-emerald-950">
             GBD Company LTD
           </h1>
