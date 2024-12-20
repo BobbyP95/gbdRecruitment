@@ -16,15 +16,10 @@ export function ReadyOption({
 }: ReadyOptionProps) {
   return (
     <>
-      <div
-        className={` 
-      ${cssClass} h-full options`}
-      >
+      <div className={`${cssClass} h-full options`}>
         <div
           style={{ backgroundColor: `${tailwindColor}` }}
-          className={`
-      bg-opacity-85 w-auto h-full flex flex-col justify-center gap-10 md:gap-24 text-2xl text-white`}
-        >
+          className={`bg-opacity-85 w-auto h-full flex flex-col justify-center gap-10 md:gap-24 text-2xl text-white`}>
           <div className="flex flex-col ">
             <span>I'm ready to</span>
             <span>{optionText}</span>
