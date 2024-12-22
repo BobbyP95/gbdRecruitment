@@ -84,7 +84,7 @@ export function Navbar({
             <div className=" cursor-pointer">
               <div className="flex gap-3 items-center justify-center">
                 <span className="font-semibold text-emerald-900">{user.userName}</span>
-                <img className="w-9 md:w-12 border-2 border-emerald-950 h-fit bg-slate-500 bor rounded-full" src={user.imgUrl} alt="bob" />
+                <img className="w-9   border-2 border-emerald-950 max-h-20 bg-slate-500 bor rounded-full md:w-12" src={user.imgUrl} alt="bob" />
               </div>
               <div className=" hidden"></div>
 
