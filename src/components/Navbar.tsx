@@ -69,8 +69,9 @@ export function Navbar({
             {/* Right side: Links and optional search box */}
             <div
               id="navMenu1"
-              className={`navMenu hidden flex-col text-sm md:flex-row items-center md:flex space-x-2 lg:space-x-3  `}
+              className={`navMenu  flex-col text-sm md:flex-row items-center md:flex space-x-2 lg:space-x-3  `}
             >
+
               {links.map((link) => (
                 <a
                   key={link.name}
@@ -88,9 +89,6 @@ export function Navbar({
               </div>
               <div className=" hidden"></div>
 
-            </div>
-            <div className="dots text-3xl  md:hidden  ">
-              <h1>...</h1>
             </div>
           </div>
         </nav>
