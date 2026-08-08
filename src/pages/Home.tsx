@@ -10,6 +10,7 @@ import { ReadyOption } from "../components/ReadyOption";
 
 const heroTiles = [
   {
+<<<<<<< HEAD
     tailwindColor: "rgba(22, 75, 96, 0.8)",
     optionText: "Get to work",
     buttonText: "Call Center Roles",
@@ -81,12 +82,37 @@ const services = [
     description:
       "Looking for work? Tell us what you're after and we'll match you to real openings.",
     href: "/get_a_job",
+=======
+    id:1,
+    tailwindColor: "rgb(22, 75, 96,0.8)",
+    optionText: "Get TO WORK",
+    buttonText: "Call Center",
+    cssClass: "callCenter",
+    location: "/get_a_job"
+  },
+  {
+    id:2,
+    tailwindColor: "rgb(228, 143, 69,0.8)",
+    optionText: "HIRE PEOPLE",
+    buttonText: "Data Entry",
+    cssClass: "dataEntry",
+    location: "/recruiting"
+  },
+  {
+    id:3,
+    tailwindColor: "rgb(37, 67, 54,0.8)",
+    optionText: "Get TO WORK",
+    buttonText: "Consultation",
+    cssClass: "consulting",
+    location: "/consulting"
+>>>>>>> 8530c44bddc32cce5b9f3208d909af117359ff09
   },
 ];
 
 export function Home() {
   return (
     <>
+<<<<<<< HEAD
       {/* Hero — headline over the existing three-panel image CTA */}
       <div className="relative">
         <div className="absolute inset-x-0 top-0 z-10 pt-40 sm:pt-36 lg:pt-32 px-4 pointer-events-none">
@@ -98,6 +124,12 @@ export function Home() {
               GBD Company LTD connects businesses with staff they can rely
               on, and job seekers with work that fits.
             </p>
+=======
+      <div className="home flex flex-wrap w-full pt-20  ">
+        {sections.map((values,index) => (
+          <div key={index} className="sec-item  w-full h-96 md:w-1/3  md:h-lvh">
+            <ReadyOption key={values.id}  {...values} />
+>>>>>>> 8530c44bddc32cce5b9f3208d909af117359ff09
           </div>
         </div>
 
