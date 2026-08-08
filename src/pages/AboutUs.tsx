@@ -26,7 +26,6 @@ const values = [
 export function AboutUs() {
   return (
     <>
-<<<<<<< HEAD
       <PageHero
         eyebrow="Who We Are"
         title="Staffing built on getting it right, not getting it done fast"
@@ -95,11 +94,6 @@ export function AboutUs() {
       </section>
 
       <Footer />
-=======
-      <div className="pt-28"></div>
-      <h1>AboutUs Page!!!</h1>
-      <img src="/home.jpg" alt="" />
->>>>>>> 8530c44bddc32cce5b9f3208d909af117359ff09
     </>
   );
 }

@@ -1,16 +1,11 @@
 import { Link } from "react-router-dom";
 
 type ReadyOptionProps = {
-  key: number;
   tailwindColor: string;
   optionText: string;
   buttonText: string;
   cssClass: string;
-<<<<<<< HEAD
   to: string;
-=======
-  location: string;
->>>>>>> 8530c44bddc32cce5b9f3208d909af117359ff09
 };
 
 export function ReadyOption({
@@ -18,7 +13,6 @@ export function ReadyOption({
   optionText,
   buttonText,
   cssClass,
-<<<<<<< HEAD
   to,
 }: ReadyOptionProps) {
   return (
@@ -42,27 +36,5 @@ export function ReadyOption({
         </span>
       </span>
     </Link>
-=======
-  location = "/about_us",
-}: ReadyOptionProps) {
-  return (
-    <>
-      <div className={`${cssClass} h-full options`}>
-        <div
-          style={{ backgroundColor: `${tailwindColor}` }}
-          className={`bg-opacity-85 w-auto h-full flex flex-col justify-center gap-10 md:gap-24 text-2xl text-white`}>
-          <div className="flex flex-col ">
-            <span>I'm ready to</span>
-            <span>{optionText}</span>
-          </div>
-          <a href={location}>
-            <button className="  w-fit mx-auto border-2 p-3 hover:bg-white hover:bg-opacity-40 rounded-full">
-              {buttonText}
-            </button>
-          </a>
-        </div>
-      </div>
-    </>
->>>>>>> 8530c44bddc32cce5b9f3208d909af117359ff09
   );
 }

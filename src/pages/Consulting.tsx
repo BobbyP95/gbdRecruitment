@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Footer } from "../components/Footer";
 import { PageHero } from "../components/PageHero";
 import {
@@ -78,13 +77,6 @@ export function Consulting() {
       </section>
 
       <Footer />
-=======
-export function Consulting() {
-  return (
-    <>
-      <div className="pt-28"></div>
-      <h1>Consulting Page!!!</h1>
->>>>>>> 8530c44bddc32cce5b9f3208d909af117359ff09
     </>
   );
 }
